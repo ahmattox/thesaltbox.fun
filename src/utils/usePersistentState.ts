@@ -1,11 +1,13 @@
+'use client'
+
 import { useState, useCallback, useEffect } from 'react'
 
 /**
  * Similar to `useState`, stores the value in local storage and returns the
  * stored value if present.
  *
- * The `initialValue` is always returned on the first render because Gatsby
- * requires the initial render to be deterministic.
+ * The `initialValue` is always returned on the first render so the initial
+ * render is deterministic.
  *
  * Optionally, provide a 'validate' function to verify or normalize the stored
  * value.
@@ -17,7 +19,7 @@ import { useState, useCallback, useEffect } from 'react'
 export function usePersistentState<T>(
   key: string | null,
   initialValue: T,
-  validate?: (value: T) => T
+  validate?: (value: T) => T,
 ): [T, (value: T) => void] {
   const [storedValue, setStoredValue] = useState<T>(initialValue)
 
@@ -33,7 +35,7 @@ export function usePersistentState<T>(
 
         setStoredValue(value)
       }
-    } catch (error) {
+    } catch {
       // no-op, this can fail in some browsers in incognito mode
     }
 
@@ -47,11 +49,11 @@ export function usePersistentState<T>(
         if (key) {
           window.localStorage.setItem(key, JSON.stringify(value))
         }
-      } catch (error) {
+      } catch {
         // no-op
       }
     },
-    [key]
+    [key],
   )
 
   return [storedValue, setValue]

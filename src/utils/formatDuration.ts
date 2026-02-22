@@ -15,12 +15,12 @@ export function formatDuration(duration: number) {
     result = [
       padStart(hours.toString(), 2, '0'),
       padStart(minutes.toString(), 2, '0'),
-      padStart(seconds.toString(), 2, '0')
+      padStart(seconds.toString(), 2, '0'),
     ].join(':')
   } else {
     result = [
       padStart(minutes.toString(), 2, '0'),
-      padStart(seconds.toString(), 2, '0')
+      padStart(seconds.toString(), 2, '0'),
     ].join(':')
   }
 

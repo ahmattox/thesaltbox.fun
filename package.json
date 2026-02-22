@@ -1,50 +1,32 @@
 {
-  "name": "the-salt-box",
-  "version": "1.0.0",
+  "name": "thesaltbox.fun",
+  "version": "0.1.0",
   "private": true,
-  "description": "the-salt-box",
-  "author": "Anthony Mattox",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "types:check": "tsc --noEmit",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,css,md}\"",
-    "deploy": "gatsby build && aws s3 sync ./public s3://thesaltbox.fun --delete"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint 'src/' --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,md}\"",
+    "types:check": "tsc --noEmit"
   },
   "dependencies": {
-    "@mdx-js/react": "^3.1.0",
+    "@types/lodash": "^4.17.23",
     "classnames": "^2.5.1",
-    "gatsby": "^5.13.7",
-    "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-mdx": "^5.13.1",
-    "gatsby-plugin-root-import": "^2.0.9",
-    "gatsby-plugin-sitemap": "^6.13.1",
-    "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-transformer-yaml": "^5.14.0",
-    "lodash": "^4.17.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "yaml": "^2.7.0"
+    "lodash": "^4.17.23",
+    "next": "16.1.6",
+    "prettier": "^3.8.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.12",
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
-    "@typescript-eslint/parser": "^6.18.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.3.3",
-    "tsx": "^4.19.2",
-    "typescript": "^5.3.3"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "typescript": "^5"
   }
 }

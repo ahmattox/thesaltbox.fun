@@ -1,8 +1,6 @@
-import * as styles from './EventDetails.module.css'
+import styles from './EventDetails.module.css'
 
-import * as React from 'react'
-
-import * as Typography from 'src/components/general/Typography'
+import * as Typography from '@/components/general/Typography'
 
 type EventState =
   | 'ticket-sales'
@@ -13,7 +11,7 @@ type EventState =
 
 const eventState = 'ticket-sales' as EventState
 
-export const EventDetails: React.FC = () => {
+export function EventDetails() {
   return (
     <div className={styles.container}>
       <div className={styles.ticketInfo}>

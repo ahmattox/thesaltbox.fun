@@ -18,6 +18,6 @@ export function parseLooseTime(value: string) {
 
   return {
     hours,
-    minutes
+    minutes,
   }
 }

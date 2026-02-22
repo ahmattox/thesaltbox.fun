@@ -1,14 +1,13 @@
-import * as styles from './Header.module.css'
+import styles from './Header.module.css'
 
-import React from 'react'
-import { Link } from 'gatsby-link'
+import Link from 'next/link'
 
-import { Logo } from 'src/components/Logo'
+import { Logo } from '@/components/Logo'
 
-export const Header: React.FC = () => {
+export function Header() {
   return (
     <div className={styles.container}>
-      <Link className={styles.logo} to="/">
+      <Link className={styles.logo} href="/">
         <Logo />
       </Link>
 

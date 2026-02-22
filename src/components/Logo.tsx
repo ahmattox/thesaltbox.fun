@@ -1,8 +1,6 @@
-import * as styles from './Logo.module.css'
+import styles from './Logo.module.css'
 
-import * as React from 'react'
-
-export const Logo: React.FC = () => {
+export function Logo() {
   return (
     <img
       src="/salt-box-logo.png"

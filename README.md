@@ -1,16 +1,16 @@
 # The Salt Box
 
-Informational website for a Magic: The Gathering Cube event in Baltimore.
+Website for a Magic: The Gathering Cube event in Baltimore.
 
 http://thesaltbox.fun/
 
 ## Prerequisites
 
--   [Node 18](https://nodejs.org/en/): [nvm](https://github.com/creationix/nvm)
-    is recommended for installing and managing Node. After installing, run
-    `$ nvm install` in this project directory.
--   [Yarn](https://classic.yarnpkg.com/en/docs/install) to install JavaScript
-    dependencies.
+- [Node 18](https://nodejs.org/en/): [nvm](https://github.com/creationix/nvm) is
+  recommended for installing and managing Node. After installing, run
+  `$ nvm install` in this project directory.
+- [Yarn](https://classic.yarnpkg.com/en/docs/install) to install JavaScript
+  dependencies.
 
 ## Setup
 
@@ -20,18 +20,15 @@ In the project directory, install dependencies with:
 $ yarn install
 ```
 
-See the [detailed setup instructions](documentation/setup.md) for more info and
-troubleshooting.
-
 ## Development
 
 Run the development server with:
 
 ```sh
-$ yarn start
+$ yarn dev
 ```
 
-View the site in a browser at `http://localhost:8000`
+View the site in a browser at `http://localhost:3000`
 
 ### Validating and Formatting
 
@@ -39,13 +36,13 @@ A few tools are used to enhance and validate JavaScript. It's recommended to
 install plugins for these in your text editor if available to validate and
 format automatically.
 
--   [TypeScript](https://www.typescriptlang.org) is used to type check
-    JavaScript. Run `$ yarn types:check` to check manually.
--   [Prettier](https://prettier.io) formats JavaScript and CSS, enforcing
-    consistency and reducing incidental changes. Run `$ yarn format` to manually
-    format, or `$ yarn format:check` to verify.
--   [ESLint](https://eslint.org) checks for some kinds of JavaScript errors and
-    consistent style. Run `$ yarn lint` to manually check.
+- [TypeScript](https://www.typescriptlang.org) is used to type check JavaScript.
+  Run `$ yarn types:check` to check manually.
+- [Prettier](https://prettier.io) formats JavaScript and CSS, enforcing
+  consistency and reducing incidental changes. Run `$ yarn format` to manually
+  format, or `$ yarn format:check` to verify.
+- [ESLint](https://eslint.org) checks for some kinds of JavaScript errors and
+  consistent style. Run `$ yarn lint` to manually check.
 
 ### Updating
 

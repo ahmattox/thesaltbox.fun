@@ -1,12 +1,30 @@
-import * as styles from './event-details.module.css'
+import styles from './page.module.css'
 
-import * as React from 'react'
-import type { HeadFC } from 'gatsby'
+import { Metadata } from 'next'
 
-import { Layout } from 'src/components/layout/Layout'
-import { Header } from 'src/components/layout/Header'
+import { Layout } from '@/components/layout/Layout'
+import { Header } from '@/components/layout/Header'
 
-const EventDetailsPage: React.FC = () => {
+export const metadata: Metadata = {
+  title: 'Event Details - The Salt Box',
+  description:
+    'The event will include four draft slots over two days. Players will be organized into pods based on ranked choice votes of their preferred cubes.',
+  openGraph: {
+    title: 'Event Details - The Salt Box',
+    description:
+      'The event will include four draft slots over two days. Players will be organized into pods based on ranked choice votes of their preferred cubes.',
+    images: {
+      url: 'http://thesaltbox.fun/the-salt-box-og.jpg',
+      width: 1200,
+      height: 630,
+    },
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+}
+
+export default function EventDetailsPage() {
   return (
     <Layout>
       <div className={styles.container}>
@@ -84,35 +102,5 @@ const EventDetailsPage: React.FC = () => {
         </div>
       </div>
     </Layout>
-  )
-}
-
-export default EventDetailsPage
-
-export const Head: HeadFC = () => {
-  return (
-    <>
-      <title>Event Details - The Salt Box</title>
-
-      <meta
-        property="og:image"
-        content="http://thesaltbox.fun/the-salt-box-og.jpg"
-      />
-      <meta property="og:image-width" content="1200" />
-      <meta property="og:image-height" content="630" />
-
-      <meta property="og:title" content="Event Details - The Salt Box" />
-
-      <meta
-        name="description"
-        content="The event will include four draft slots over two days. Players will be organized into pods based on ranked choice votes of their preferred cubes."
-      />
-      <meta
-        property="og:description"
-        content="The event will include four draft slots over two days. Players will be organized into pods based on ranked choice votes of their preferred cubes."
-      />
-
-      <meta name="twitter:card" content="summary_large_image" />
-    </>
   )
 }

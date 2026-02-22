@@ -1,8 +1,10 @@
+'use client'
+
 import { useCallback, useMemo } from 'react'
 import { difference, random, uniqueId } from 'lodash'
 
-import { usePersistentState } from 'src/utils/usePersistentState'
-import { parseLooseTime } from 'src/utils/parseLooseTime'
+import { usePersistentState } from '@/utils/usePersistentState'
+import { parseLooseTime } from '@/utils/parseLooseTime'
 
 interface TimerState {
   id: string
@@ -17,13 +19,13 @@ interface InternalTimerState {
 
 const defaultState: InternalTimerState = {
   timers: [],
-  timerCount: 0
+  timerCount: 0,
 }
 
 export function useTimerState(cubeNames: string[]) {
   const [state, setState] = usePersistentState<InternalTimerState>(
     'round-timers-state',
-    defaultState
+    defaultState,
   )
 
   const reset = useCallback(() => {
@@ -33,13 +35,13 @@ export function useTimerState(cubeNames: string[]) {
   const addTimer = useCallback(() => {
     const unusedCubeNames = difference(
       cubeNames,
-      state.timers.map((timer) => timer.label)
+      state.timers.map((timer) => timer.label),
     )
 
     if (state.timerCount < state.timers.length) {
       setState({
         ...state,
-        timerCount: state.timerCount + 1
+        timerCount: state.timerCount + 1,
       })
     } else {
       setState({
@@ -53,9 +55,9 @@ export function useTimerState(cubeNames: string[]) {
               unusedCubeNames[random(unusedCubeNames.length - 1)] ??
               cubeNames[random(cubeNames.length - 1)] ??
               'New Timer',
-            endTimeInput: '12:00'
-          }
-        ]
+            endTimeInput: '12:00',
+          },
+        ],
       })
     }
   }, [cubeNames, setState, state])
@@ -65,17 +67,17 @@ export function useTimerState(cubeNames: string[]) {
       if (index == null) {
         setState({
           ...state,
-          timerCount: state.timerCount - 1
+          timerCount: state.timerCount - 1,
         })
       } else {
         setState({
           ...state,
           timers: state.timers.splice(index, 1),
-          timerCount: state.timerCount - 1
+          timerCount: state.timerCount - 1,
         })
       }
     },
-    [setState, state]
+    [setState, state],
   )
 
   const updateTimer = useCallback(
@@ -84,10 +86,10 @@ export function useTimerState(cubeNames: string[]) {
       timers[index] = { ...state.timers[index], ...newValue }
       setState({
         ...state,
-        timers
+        timers,
       })
     },
-    [setState, state]
+    [setState, state],
   )
 
   const exportTimers = useMemo(
@@ -103,16 +105,16 @@ export function useTimerState(cubeNames: string[]) {
                 now.getMonth(),
                 now.getDate(),
                 endTime.hours,
-                endTime.minutes
+                endTime.minutes,
               )
             : null
 
         return {
           ...timer,
-          endDate
+          endDate,
         }
       }),
-    [state.timerCount, state.timers]
+    [state.timerCount, state.timers],
   )
 
   return {
@@ -120,6 +122,6 @@ export function useTimerState(cubeNames: string[]) {
     reset,
     addTimer,
     updateTimer,
-    removeTimer
+    removeTimer,
   }
 }

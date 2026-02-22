@@ -1,10 +1,13 @@
-import * as styles from './RoundTimer.module.css'
+'use client'
 
-import React, { useEffect, useState } from 'react'
+import styles from './RoundTimer.module.css'
+
+import { useEffect, useState } from 'react'
 import classNames from 'classnames'
 
+import { formatDuration } from '@/utils/formatDuration'
+
 import { useTimerState } from './useTimerState'
-import { formatDuration } from 'src/utils/formatDuration'
 
 /**
  * TODO
@@ -22,7 +25,7 @@ interface Props {
   cubeNames: string[]
 }
 
-export const RoundTimer: React.FC<Props> = (props) => {
+export function RoundTimer(props: Props) {
   const { cubeNames } = props
 
   const { timers, reset, addTimer, updateTimer, removeTimer } =
@@ -47,7 +50,7 @@ export const RoundTimer: React.FC<Props> = (props) => {
   return (
     <div
       className={classNames(styles.container, {
-        [styles.dark]: darkMode
+        [styles.dark]: darkMode,
       })}
     >
       <div className={styles.controls}>
@@ -95,7 +98,7 @@ export const RoundTimer: React.FC<Props> = (props) => {
             <div
               key={timer.id}
               className={classNames(styles.timer, {
-                [styles.urgent]: seconds != null && seconds < 60 * 5
+                [styles.urgent]: seconds != null && seconds < 60 * 5,
               })}
             >
               <div className={styles.timerName}>
@@ -110,7 +113,7 @@ export const RoundTimer: React.FC<Props> = (props) => {
               </div>
 
               <div className={styles.timerCountDown}>
-                {timer.endDate != null ? formatDuration(seconds) : <>--:--</>}
+                {seconds != null ? formatDuration(seconds) : <>--:--</>}
               </div>
 
               <div className={styles.timerEndTime}>
@@ -124,7 +127,7 @@ export const RoundTimer: React.FC<Props> = (props) => {
                   value={timer.endTimeInput}
                   onChange={(event) =>
                     updateTimer(index, {
-                      endTimeInput: event.currentTarget.value
+                      endTimeInput: event.currentTarget.value,
                     })
                   }
                 />

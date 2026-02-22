@@ -1,9 +1,8 @@
-import * as styles from './FAQ.module.css'
+import styles from './FAQ.module.css'
 
-import * as React from 'react'
-import { Link } from 'gatsby-link'
+import Link from 'next/link'
 
-export const FAQ: React.FC = () => {
+export function FAQ() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -14,7 +13,7 @@ export const FAQ: React.FC = () => {
         <p className={styles.answer}>
           Players will be organized into pods for each draft slot using the Cube
           tournament software.{' '}
-          <Link to="/event-details/">
+          <Link href="/event-details/">
             Read more about how the event is structured.
           </Link>
         </p>

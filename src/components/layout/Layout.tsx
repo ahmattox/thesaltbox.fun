@@ -1,6 +1,4 @@
-import * as styles from './Layout.module.css'
-
-import React from 'react'
+import styles from './Layout.module.css'
 
 interface Props {
   children: React.ReactNode

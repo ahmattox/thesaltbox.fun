@@ -1,12 +1,11 @@
-import * as styles from './Typography.module.css'
+import styles from './Typography.module.css'
 
 import { createElement } from 'react'
 
-interface HeadingElementProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLHeadingElement>,
-    HTMLHeadingElement
-  > {
+interface HeadingElementProps extends React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLHeadingElement>,
+  HTMLHeadingElement
+> {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
@@ -17,9 +16,9 @@ export const PrimaryHeading: React.FC<HeadingElementProps> = (props) => {
     as,
     {
       className: styles.primaryHeading,
-      ...elementProps
+      ...elementProps,
     },
-    children
+    children,
   )
 }
 
@@ -31,9 +30,9 @@ export const SecondaryHeading: React.FC<HeadingElementProps> = (props) => {
     {
       className: styles.secondaryHeading,
 
-      ...elementProps
+      ...elementProps,
     },
-    children
+    children,
   )
 }
 
@@ -45,8 +44,8 @@ export const TertiaryHeading: React.FC<HeadingElementProps> = (props) => {
     {
       className: styles.secondaryHeading,
 
-      ...elementProps
+      ...elementProps,
     },
-    children
+    children,
   )
 }

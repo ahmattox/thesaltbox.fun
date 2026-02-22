@@ -1,17 +1,7 @@
 {
-    "tabWidth": 2,
-    "endOfLine": "lf",
-    "semi": false,
-    "singleQuote": true,
-    "arrowParens": "always",
-    "proseWrap": "always",
-    "trailingComma": "none",
-    "overrides": [
-        {
-            "files": "*.md",
-            "options": {
-                "tabWidth": 4
-            }
-        }
-    ]
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "always",
+  "proseWrap": "always"
 }

@@ -1,10 +1,8 @@
-import * as styles from './Schedule.module.css'
+import styles from './Schedule.module.css'
 
-import React from 'react'
+import * as Typography from '@/components/general/Typography'
 
-import * as Typography from 'src/components/general/Typography'
-
-export const Schedule: React.FC = () => {
+export function Schedule() {
   return (
     <div className={styles.container}>
       <Typography.SecondaryHeading>Event Schedule</Typography.SecondaryHeading>

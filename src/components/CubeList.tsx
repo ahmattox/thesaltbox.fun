@@ -1,8 +1,6 @@
-import * as styles from './CubeList.module.css'
+import styles from './CubeList.module.css'
 
-import * as React from 'react'
-
-import * as Typography from 'src/components/general/Typography'
+import * as Typography from '@/components/general/Typography'
 
 const cornerWidth = 30
 const cornerHeight = 30
@@ -10,16 +8,16 @@ const cornerHeight = 30
 interface Props {
   title: string
   cubes: {
-    name: string | null
-    url: string | null
+    name: string
+    url: string
     designer: string | null
     designerURL: string | null
-    imageURL: string | null
+    imageURL: string
     description: string | null
   }[]
 }
 
-export const CubeList: React.FC<Props> = (props) => {
+export function CubeList(props: Props) {
   const { title, cubes } = props
 
   return (
@@ -30,7 +28,7 @@ export const CubeList: React.FC<Props> = (props) => {
         {cubes.map((cube) => (
           <div key={cube.name} className={styles.cube}>
             <a href={cube.url} className={styles.cubeMain}>
-              <img src={cube.imageURL} className={styles.image} />
+              <img src={cube.imageURL} className={styles.image} alt="" />
 
               <div className={styles.details}>
                 <div className={styles.name}>{cube.name}</div>
