@@ -2,7 +2,7 @@ import styles from './Header.module.css'
 
 import Link from 'next/link'
 
-import { Logo } from '@/components/Logo'
+import { Logo } from '@/components/layout/Logo'
 
 export function Header() {
   return (

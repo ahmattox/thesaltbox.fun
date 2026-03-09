@@ -1,6 +1,8 @@
 import './reset.css'
 import './globals.css'
 
+import styles from './layout.module.css'
+
 import type { Metadata } from 'next'
 
 import { Inter } from 'next/font/google'
@@ -23,7 +25,9 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className={sansFont.variable}>{children}</body>
+      <body className={sansFont.variable}>
+        <div className={styles.container}>{children}</div>
+      </body>
     </html>
   )
 }

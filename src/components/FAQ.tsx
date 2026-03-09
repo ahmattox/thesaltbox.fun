@@ -20,6 +20,20 @@ export function FAQ() {
       </div>
 
       <div className={styles.item}>
+        <div className={styles.question}>Which cubes will be played?</div>
+
+        <p className={styles.answer}>
+          The Cube list is still to be determined and will be selected from
+          submitted cubes.
+          <Link href="/2025-event/">View last year&rsquo;s cubes</Link>, or{' '}
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc11eHn_OJMxUy23z_cuqpnSYEygF5iYn3e375VMB04TQ6aZw/viewform">
+            submit your own
+          </a>{' '}
+          for consideration.
+        </p>
+      </div>
+
+      <div className={styles.item}>
         <div className={styles.question}>Local Amenities</div>
 
         <p className={styles.answer}>

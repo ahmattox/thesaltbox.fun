@@ -8,7 +8,7 @@ import { RoundTimer } from '@/components/round-timer/RoundTimer'
 import { getCubes } from '@/data/getCubes'
 
 export default function RoundTimerPage() {
-  const cubes = getCubes()
+  const cubes = getCubes('2025')
 
   const cubeNames = useMemo(() => {
     return compact(cubes.map((cube) => cube.name))

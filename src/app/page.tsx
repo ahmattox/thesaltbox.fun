@@ -2,10 +2,9 @@ import styles from './page.module.css'
 
 import { Metadata } from 'next'
 
-import { Layout } from '@/components/layout/Layout'
 import { Header } from '@/components/layout/Header'
 import { Schedule } from '@/components/Schedule'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components/layout/Footer'
 import { EventDetails } from '@/components/EventDetails'
 import { FAQ } from '@/components/FAQ'
 
@@ -29,24 +28,22 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <Layout>
-      <div className={styles.container}>
-        <Header />
+    <div className={styles.container}>
+      <Header />
 
-        <div className={styles.mainContent}>
-          <EventDetails />
+      <div className={styles.mainContent}>
+        <EventDetails />
 
-          <div className={styles.schedule}>
-            <Schedule />
-          </div>
+        <div className={styles.schedule}>
+          <Schedule />
         </div>
-
-        <div className={styles.secondaryContent}>
-          <FAQ />
-        </div>
-
-        <Footer />
       </div>
-    </Layout>
+
+      <div className={styles.secondaryContent}>
+        <FAQ />
+      </div>
+
+      <Footer />
+    </div>
   )
 }

@@ -3,8 +3,5 @@
   color: var(--text-color);
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.content {
   padding: 2em;
 }
