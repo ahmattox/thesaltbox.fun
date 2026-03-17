@@ -57,12 +57,12 @@ export function EventDetails() {
               Affordable Tickets - $10
             </a>
 
-            <p className={styles.ticketNote}>
+            <p className={styles.note}>
               Discounted tickets are available here if your financial situation
               calls for it.
             </p>
 
-            <p className={styles.ticketNote}>72 Total Seats Available.</p>
+            <p className={styles.note}>72 Total Seats Available.</p>
           </>
         ) : eventState === 'pre-sale' ? (
           <div>
@@ -81,6 +81,10 @@ export function EventDetails() {
       >
         Submit Your Cube
       </a>
+
+      <p className={styles.note}>
+        Submissions will be open until March 31st. Don&rsquo; wait!
+      </p>
 
       <hr className={styles.rule} />
 
