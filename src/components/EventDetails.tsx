@@ -9,7 +9,7 @@ type EventState =
   | 'concluded'
   | 'pre-sale'
 
-const eventState = 'ticket-sales' as EventState
+const eventState = 'sold-out' as EventState
 
 export function EventDetails() {
   return (
@@ -35,7 +35,7 @@ export function EventDetails() {
             </p>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScsug9tBx0yQudhn-Cq4ToiJXVb3iecCV0RfiGz3uuvxZKcXg/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfN12ZyTcjIWU7j-Nga3tXZEp76QwH5eFIqOGEZtb4YUGnrow/viewform"
               className={styles.largeButton}
             >
               Join Waitlist
