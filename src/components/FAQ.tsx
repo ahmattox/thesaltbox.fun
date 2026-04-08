@@ -24,12 +24,8 @@ export function FAQ() {
 
         <p className={styles.answer}>
           The Cube list is still to be determined and will be selected from
-          submitted cubes.
-          <Link href="/2025-event/">View last year&rsquo;s cubes</Link>, or{' '}
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc11eHn_OJMxUy23z_cuqpnSYEygF5iYn3e375VMB04TQ6aZw/viewform">
-            submit your own
-          </a>{' '}
-          for consideration.
+          participant submitted cubes.{' '}
+          <Link href="/2025-event/">View last year&rsquo;s cubes</Link>.
         </p>
       </div>
 

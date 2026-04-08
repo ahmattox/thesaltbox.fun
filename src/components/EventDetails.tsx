@@ -10,6 +10,7 @@ type EventState =
   | 'pre-sale'
 
 const eventState = 'sold-out' as EventState
+const cubeSubmissionsOpen = false
 
 export function EventDetails() {
   return (
@@ -75,16 +76,20 @@ export function EventDetails() {
         Join the Discord Server
       </a>
 
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSc11eHn_OJMxUy23z_cuqpnSYEygF5iYn3e375VMB04TQ6aZw/viewform"
-        className={styles.largeButton}
-      >
-        Submit Your Cube
-      </a>
+      {cubeSubmissionsOpen && (
+        <>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc11eHn_OJMxUy23z_cuqpnSYEygF5iYn3e375VMB04TQ6aZw/viewform"
+            className={styles.largeButton}
+          >
+            Submit Your Cube
+          </a>
 
-      <p className={styles.note}>
-        Submissions will be open until March 31st. Don&rsquo; wait!
-      </p>
+          <p className={styles.note}>
+            Submissions will be open until March 31st. Don&rsquo; wait!
+          </p>
+        </>
+      )}
 
       <hr className={styles.rule} />
 
