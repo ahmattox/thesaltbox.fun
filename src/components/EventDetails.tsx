@@ -9,7 +9,7 @@ type EventState =
   | 'concluded'
   | 'pre-sale'
 
-const eventState = 'sold-out' as EventState
+const eventState = 'ticket-sales' as EventState
 const cubeSubmissionsOpen = false
 
 export function EventDetails() {
@@ -63,7 +63,7 @@ export function EventDetails() {
               calls for it.
             </p>
 
-            <p className={styles.note}>72 Total Seats Available.</p>
+            <p className={styles.note}>96 Total Seats Available.</p>
           </>
         ) : eventState === 'pre-sale' ? (
           <div>
