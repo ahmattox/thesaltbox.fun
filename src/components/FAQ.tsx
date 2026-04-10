@@ -23,9 +23,8 @@ export function FAQ() {
         <div className={styles.question}>Which cubes will be played?</div>
 
         <p className={styles.answer}>
-          The Cube list is still to be determined and will be selected from
-          participant submitted cubes.{' '}
-          <Link href="/2025-event/">View last year&rsquo;s cubes</Link>.
+          The list has been selected from participant designed and submitted
+          cubes. <Link href="/2025-event/">View last year&rsquo;s cubes</Link>.
         </p>
       </div>
 
