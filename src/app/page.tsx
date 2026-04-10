@@ -2,11 +2,15 @@ import styles from './page.module.css'
 
 import { Metadata } from 'next'
 
+import * as Typography from '@/components/general/Typography'
+import { getCubes } from '@/data/getCubes'
+
 import { Header } from '@/components/layout/Header'
 import { Schedule } from '@/components/Schedule'
 import { Footer } from '@/components/layout/Footer'
 import { EventDetails } from '@/components/EventDetails'
 import { FAQ } from '@/components/FAQ'
+import { CubeList } from '@/components/CubeList'
 
 export const metadata: Metadata = {
   title:
@@ -26,6 +30,8 @@ export const metadata: Metadata = {
   },
 }
 
+const cubes = getCubes('2026')
+
 export default function HomePage() {
   return (
     <div className={styles.container}>
@@ -37,6 +43,12 @@ export default function HomePage() {
         <div className={styles.schedule}>
           <Schedule />
         </div>
+      </div>
+
+      <div className={styles.cubes}>
+        <Typography.SecondaryHeading>The Cubes</Typography.SecondaryHeading>
+
+        <CubeList cubes={cubes} />
       </div>
 
       <div className={styles.secondaryContent}>

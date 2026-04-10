@@ -21,3 +21,8 @@
 .secondaryContent {
   max-width: 700px;
 }
+
+.cubes {
+  display: grid;
+  gap: 1em;
+}

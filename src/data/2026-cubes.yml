@@ -1,0 +1,143 @@
+- name: Wetlands
+  url: https://cubecobra.com/cube/about/thewetlands
+  description:
+    Humanity fights for a place in the ecological new epoch. A desert cube with
+    Eastern Seaboard flavor. The humans are small and fragile compared to the
+    wilds that have arisen.
+  imageURL: https://cards.scryfall.io/art_crop/front/9/0/9006ff3d-446d-411d-948d-9baee8ea9691.jpg?1562410148
+
+- name: Red Terror
+  url: https://cubecobra.com/cube/list/redterror
+  designer: Andrew
+  description:
+    A local cube focused on red and its allies vs its enemies. You will probably
+    be playing red, but you can see how flexible red is on the aggro-control
+    spectrum. Lightning bolt is a surprisingly modal spell.
+  imageURL: https://cards.scryfall.io/art_crop/front/a/b/ab0ba385-1f68-4add-a5e6-9df53d84b66f.jpg?1674059119
+
+- name: Reading Rainbow
+  url: https://cubecobra.com/cube/list/allgoldcube
+  designer: Daniel
+  description:
+    Its all gold baby! It’s not just about multicolor, its all about that golden
+    look. Start with a Pillar of the Paruns in play to enable you casting all
+    your spells. How many lands are you supposed to play? We don’t know! Admire
+    cards you might have never seen before and remember, every card is
+    splashable and the mana will probably work. Probably. This is one of my
+    favorite cubes I’ve ever played.
+  imageURL: https://cards.scryfall.io/art_crop/front/2/3/236dcb39-b81e-4ae2-b153-01be0577ed93.jpg?1593274108
+
+- name: Arcane Lessons
+  url: https://cubecobra.com/cube/about/ArcaneLessons?view=primer
+  description:
+    All Instants and Sorceries are Arcane Lessons! Kamigawa collides with
+    Strixhaven. Worry not as you are given a few tools to start with in a bag of
+    school supplies. Explore old kamigawa with a few more recent cards to guide
+    you.
+  imageURL: https://cards.scryfall.io/art_crop/front/a/0/a057e5f3-b6bd-4995-b990-714201f36989.jpg?1562928838
+
+- name: Oldest School
+  url: https://cubecobra.com/cube/list/oldestschool
+  designer: Alex
+  description:
+    Many cubes are inspired by old school magic, but often they take inspiration
+    from magics competitive scene. Now what about a cube that is more about how
+    most people actually played. Find out how good flying is as a keyword, or
+    how hard you used to have to work for a little card advantage. (Played
+    unsleeved)
+  imageURL: https://cards.scryfall.io/art_crop/front/a/5/a594299e-fc3a-4d46-bd58-1a9cf7ddbdd7.jpg?1559591747
+
+- name: Zoso
+  url: https://cubecobra.com/cube/list/ZoSo
+  designer: Alex
+  description:
+    Local desert cube that explores the tension between multicolor and high
+    devotion cards. Your mana is going to suck, but luckily you’ll have time
+    while you and your opponent figure it out. However, don’t discount threat
+    goblin patrol can put out.
+  imageURL: https://cards.scryfall.io/art_crop/front/e/4/e46d0c10-ec09-48ba-9e93-1392dca8111a.jpg?1562937684
+
+- name: Regular Cube
+  url: https://cubecobra.com/cube/list/regular
+  designer: Anthony
+  description:
+    Whats the power level? Somewhere in the middle. Complexity? In the middle.
+    Quality of gameplay? High. Regular Cube contains play patterns that bring
+    that limited feeling while still playing pretty good cards. It’s the
+    distilled version of what magic is designed for.
+  imageURL: https://cards.scryfall.io/art_crop/front/a/d/ad8b8518-c09e-4cb7-95b2-08e4e370d89c.jpg?1562803091
+
+- name: The Odyssey
+  url: https://cubecobra.com/cube/list/dr5ftin
+  description:
+    'A loose combination of Odyssey Block and The Odyssey: A fight between the
+    Davids and the Goliaths. Heavy focus on graveyard themes as the old classics
+    fight their way back into the epic tales.'
+  imageURL: https://cards.scryfall.io/art_crop/front/9/b/9b0c8057-bac5-4160-9b30-bfe0cfc37602.jpg?1716314725
+
+- name: The United States Environmental Protection Agency
+  url: https://cubecobra.com/cube/list/EPA
+  description:
+    Regulation is in order in this context-shift cube. You share control of the
+    EPA, a Rule of Law effect that transforms into the Smokestack once the rules
+    have been removed. Figure out how to manage playing through a game where the
+    stax pieces are already in play. Which side will you try to favor? How will
+    you deal with an opponent with a different environmental ideal?
+  imageURL: https://cards.scryfall.io/art_crop/front/6/a/6a37ab2d-094f-431e-878f-93aef0360413.jpg?1562917198
+
+- name: Super Magic Fun Times
+  url: https://cubecobra.com/cube/about/smft
+  designer: Adam
+  description:
+    Play with some of magic’s more powerful cards in this legacy cube. If you
+    like casting ragavan, this is where the monkey lives. There are still some
+    classics that keep up with grave titan, thalia, and snapcaster existing as
+    baselines for comparision.
+  imageURL: https://cards.scryfall.io/art_crop/front/6/4/644f2e7a-354f-4338-9d4f-5a06a1ad412d.jpg?1717015558
+
+- name: Virtually French
+  url: https://cubecobra.com/cube/list/honhonhon
+  designer: Max
+  description:
+    Virtually French evokes the feeling of a core set with conventional gameplay
+    and understandable cards. Attacking and Blocking with combat tricks and
+    removal. The basic magic rules are great, just roll with those.
+  imageURL: https://cards.scryfall.io/art_crop/front/4/0/409f9b88-f03e-40b6-9883-68c14c37c0de.jpg?1562546736
+
+- name: Emerging
+  url: https://cubecobra.com/cube/list/emerging
+  description:
+    This is a (mostly unpowered) vintage cube, that serves as a museum of Magic
+    while replicating the power level, play patterns, and archetypes of vintage
+    cube circa 2017. It features the classic vintage cube archetypes against a
+    backdrop of altered cards, artist proofs, artist-signed cards, or premium
+    treatments (foils, promos, Secret Lairs, etc.)
+  imageURL: https://cards.scryfall.io/art_crop/front/0/f/0ff1f608-203e-4413-8753-37fc49731c87.jpg?1562136068
+
+- name: Trenchfight
+  url: https://cubecobra.com/cube/about/Trenchfight
+  description:
+    A low mana value cube focused on combat with an emphasis on white. There are
+    no haymakers here. All you’ve got is the little scraps to push your way past
+    your opponent. Feel the horror of war as your creatures and your life is
+    never safe.
+  imageURL: https://cards.scryfall.io/art_crop/front/a/3/a3f82012-5c33-47bc-a3c8-56ae2eea1fb9.jpg?1562740636
+
+- name: Kuleshov
+  url: https://cubecobra.com/cube/list/meaning
+  description:
+    In film editing the Kuleshov Effect describes how the mental correlation of
+    two shots shown together can create more meaning than either shot might in
+    isolation, so can we apply the same concept to cube design? Medium power
+    eternal cube featuring prominent enchantment and graveyard themes, a reduced
+    number of trinkets, and no Red cards.
+  imageURL: https://cards.scryfall.io/art_crop/front/1/f/1fc2871b-c685-4951-b8e2-7370b9668f7e.jpg?1690002945
+
+- name: Sacred Geometry
+  url: https://cubecobra.com/cube/list/sacred-geometry
+  designer: Andy
+  description:
+    Sacred Geometry is a celebration of Magic's most elegant cards. Card choices
+    are driven primarily by sophistication of design, resulting in a broad power
+    level band and emergent archetypes and synergies.
+  imageURL: https://cards.scryfall.io/art_crop/front/1/a/1a2e41e3-919c-4bd3-9eea-adc0291f5f8a.jpg?1562544422

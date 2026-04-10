@@ -56,9 +56,9 @@ export function CubeList(props: Props) {
                 - {cube.designer}
               </a>
             </div>
-          ) : (
+          ) : cube.designer != null ? (
             <div className={styles.designer}>- {cube.designer}</div>
-          )}
+          ) : null}
         </div>
       ))}
     </div>

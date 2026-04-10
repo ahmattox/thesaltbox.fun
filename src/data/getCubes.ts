@@ -12,6 +12,7 @@ interface Cube {
 
 const eventYears = {
   '2025': './src/data/2025-cubes.yml',
+  '2026': './src/data/2026-cubes.yml',
 }
 
 export function getCubes(year: keyof typeof eventYears) {
