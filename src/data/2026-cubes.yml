@@ -1,5 +1,6 @@
 - name: Wetlands
   url: https://cubecobra.com/cube/about/thewetlands
+  designer: Holly
   description:
     Humanity fights for a place in the ecological new epoch. A desert cube with
     Eastern Seaboard flavor. The humans are small and fragile compared to the
@@ -29,6 +30,7 @@
 
 - name: Arcane Lessons
   url: https://cubecobra.com/cube/about/ArcaneLessons?view=primer
+  designer: Bones
   description:
     All Instants and Sorceries are Arcane Lessons! Kamigawa collides with
     Strixhaven. Worry not as you are given a few tools to start with in a bag of
@@ -77,6 +79,7 @@
 
 - name: The United States Environmental Protection Agency
   url: https://cubecobra.com/cube/list/EPA
+  designer: James
   description:
     Regulation is in order in this context-shift cube. You share control of the
     EPA, a Rule of Law effect that transforms into the Smokestack once the rules
@@ -106,6 +109,7 @@
 
 - name: Emerging
   url: https://cubecobra.com/cube/list/emerging
+  designer: Lincoln
   description:
     This is a (mostly unpowered) vintage cube, that serves as a museum of Magic
     while replicating the power level, play patterns, and archetypes of vintage
@@ -116,6 +120,7 @@
 
 - name: Trenchfight
   url: https://cubecobra.com/cube/about/Trenchfight
+  designer: Gabe Nott
   description:
     A low mana value cube focused on combat with an emphasis on white. There are
     no haymakers here. All you’ve got is the little scraps to push your way past
@@ -125,6 +130,7 @@
 
 - name: Kuleshov
   url: https://cubecobra.com/cube/list/meaning
+  designer: Brendan
   description:
     In film editing the Kuleshov Effect describes how the mental correlation of
     two shots shown together can create more meaning than either shot might in

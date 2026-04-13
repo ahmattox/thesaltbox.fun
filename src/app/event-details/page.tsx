@@ -33,8 +33,10 @@ export default function EventDetailsPage() {
 
         <p>
           The Salt Box will follow the emerging format of{' '}
-          <a href="https://luckypaper.co/events/">mid-sized cube events</a>. If
-          this is your first, here&rsquo;s what to expect.
+          <a href="https://luckypaper.co/community/events/">
+            mid-sized cube events
+          </a>
+          . If this is your first, here&rsquo;s what to expect.
         </p>
 
         <p>
