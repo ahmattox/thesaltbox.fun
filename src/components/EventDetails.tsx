@@ -72,6 +72,13 @@ export function EventDetails() {
         ) : null}
       </div>
 
+      <a
+        href="https://hedron.network/events/saltbox2026"
+        className={styles.largeButton}
+      >
+        Hedron Network
+      </a>
+
       <a href="https://discord.gg/eQgEnpQgeb" className={styles.largeButton}>
         Join the Discord Server
       </a>

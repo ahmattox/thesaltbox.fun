@@ -24,11 +24,11 @@ export function Schedule() {
           <div className={styles.itemTime}>2pm - 6pm</div>
         </div>
 
-        <div className={styles.item}>
+        {/* <div className={styles.item}>
           <div className={styles.itemLabel}>Casual Bonus Round</div>
           <div className={styles.itemTime}>Location TBD</div>
           <div className={styles.itemTime}>~7:30pm onward</div>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.day}>
@@ -49,9 +49,9 @@ export function Schedule() {
           <div className={styles.itemTime}>2pm - 6pm</div>
         </div>
 
-        <div className={styles.item}>
+        {/* <div className={styles.item}>
           <div className={styles.itemLabel}>Casual Bonus Cube</div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
