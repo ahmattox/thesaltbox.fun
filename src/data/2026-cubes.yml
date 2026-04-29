@@ -1,3 +1,13 @@
+- name: Take Five
+  url: https://cubecobra.com/cube/about/take-five?view=primer
+  designer: Andy
+  description:
+    A desert cube drafted in three standard, fifteen-card packs, resulting in
+    players only being allowed five cuts during deckbuilding. It’s designed to
+    make ambitious, clunky synergies and charmingly bad cards strategically
+    optimal by dramatically limiting each player’s card pool.
+  imageURL: https://cards.scryfall.io/art_crop/front/b/4/b40a7f65-10fe-4ce5-ad1c-be53a635d7a9.jpg?1562932997
+
 - name: Wetlands
   url: https://cubecobra.com/cube/about/thewetlands
   designer: Holly
