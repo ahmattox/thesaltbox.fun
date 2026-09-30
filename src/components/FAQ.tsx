@@ -24,7 +24,7 @@ export function FAQ() {
 
         <p className={styles.answer}>
           The list has been selected from participant designed and submitted
-          cubes. <Link href="/2025-event/">View last year&rsquo;s cubes</Link>.
+          cubes. <Link href="/2025-event/">2025 Cube List</Link>.
         </p>
       </div>
 

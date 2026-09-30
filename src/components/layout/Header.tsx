@@ -15,7 +15,7 @@ export function Header() {
         <div>
           A Two-Day <em>Magic: The Gathering</em> Cube Event in Baltimore, MD
         </div>
-        <p>May 2 - 3, 2026</p>
+        {/* <p>May 2 - 3, 2026</p> */}
       </div>
     </div>
   )

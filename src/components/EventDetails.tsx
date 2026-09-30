@@ -9,13 +9,18 @@ type EventState =
   | 'concluded'
   | 'pre-sale'
 
-const eventState = 'ticket-sales' as EventState
+const eventState = 'concluded' as EventState
 const cubeSubmissionsOpen = false
 
 export function EventDetails() {
   return (
     <div className={styles.container}>
       <div className={styles.ticketInfo}>
+        <p className={styles.announcement}>
+          The Salt Box will be returning in March or April of 2027. Check back
+          for updates!
+        </p>
+
         {eventState === 'concluded' ? null : eventState === 'in-progress' ? (
           <div>
             <a
@@ -72,12 +77,12 @@ export function EventDetails() {
         ) : null}
       </div>
 
-      <a
+      {/* <a
         href="https://hedron.network/events/saltbox2026"
         className={styles.largeButton}
       >
         Hedron Network
-      </a>
+      </a> */}
 
       <a href="https://discord.gg/eQgEnpQgeb" className={styles.largeButton}>
         Join the Discord Server

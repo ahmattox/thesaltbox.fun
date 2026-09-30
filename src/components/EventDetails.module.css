@@ -21,6 +21,12 @@
   text-align: center;
 }
 
+.announcement {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
 .buyButton {
   font-size: 1.35em;
   font-weight: bold;
