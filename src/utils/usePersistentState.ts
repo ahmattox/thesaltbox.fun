@@ -33,6 +33,7 @@ export function usePersistentState<T>(
           value = validate(value)
         }
 
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setStoredValue(value)
       }
     } catch {
